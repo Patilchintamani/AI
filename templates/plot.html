@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot</title>
+    <style>
+        /* Styling for the plot container */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Styling for the image */
+        img {
+            border: 5px solid #333; /* Example border color */
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the link */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dataset Plot</h1>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Dataset Plot">
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

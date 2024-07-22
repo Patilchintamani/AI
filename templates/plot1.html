@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generated Plots</title>
+  </head>
+  <body>
+    <h1>Generated Plots</h1>
+
+    <h2>Histogram</h2>
+    <img src="data:image/png;base64,{{ plot_hist_url }}">
+    <br>
+
+    <h2>Pie Chart</h2>
+    <img src="data:image/png;base64,{{ plot_pie_url }}">
+    <br>
+
+    <h2>Line Chart</h2>
+    <img src="data:image/png;base64,{{ plot_line_url }}">
+    <br>
+    
+    <a href="{{ url_for('index') }}">Upload another file</a>
+  </body>
+</html>

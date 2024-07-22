@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Example CSS for plot colors */
+        .plot-background {
+            background-color: #f0f0f0;
+        }
+        
+        .plot-line {
+            stroke: #ff5733; /* Color for line plots */
+            stroke-width: 2;
+        }
+
+        .plot-bar {
+            fill: #33c3ff; /* Color for bar plots */
+        }
+
+        .plot-text {
+            fill: #000000; /* Color for text in plots */
+        }
+    </style>
+</head>
+<body>
+    <h1>Dataset Information</h1>
+    <div>{{ data_info|safe }}</div>
+    <a href="/plot1">View Plot</a>
+</body>
+</html>

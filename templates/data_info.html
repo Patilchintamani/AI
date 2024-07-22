@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Info</title>
+  </head>
+  <body>
+    <h1>Data Information</h1>
+    {{ data_info|safe }}
+    <br>
+    <a href="{{ url_for('plot', filename=filename) }}">Generate Plot</a>
+  </body>
+</html>
